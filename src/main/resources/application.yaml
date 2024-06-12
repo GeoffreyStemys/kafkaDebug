@@ -1,0 +1,20 @@
+app:
+  kafka:
+    partitions: 2
+    replication: 1
+    fetchMinBytesConfig: 100000
+    fetchMaxWaitMsConfig: 1000
+
+spring:
+  application.name: demo1
+  kafka:
+    bootstrap-servers: ${HIVE_KAFKA_HOST:localhost}:${HIVE_KAFKA_PORT:9092}
+    consumer:
+      auto-offset-reset: earliest
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.apache.kafka: OFF
