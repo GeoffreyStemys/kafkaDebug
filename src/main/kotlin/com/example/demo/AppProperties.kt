@@ -2,7 +2,6 @@ package com.example.demo
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 
-
 @ConfigurationProperties(prefix = "app", ignoreUnknownFields = true, ignoreInvalidFields = false)
 data class AppProperties(
   val kafka: Kafka,
@@ -14,6 +13,5 @@ data class AppProperties(
     val fetchMinBytesConfig: Int,
     val fetchMaxWaitMsConfig: Int,
   )
-
 
 }

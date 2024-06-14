@@ -11,7 +11,7 @@ import java.lang.Thread.sleep
 
 @Service
 @Transactional(readOnly = false)
-class KafkaListener {
+class KafkaService {
 
   val logger = KotlinLogging.logger {}
 
