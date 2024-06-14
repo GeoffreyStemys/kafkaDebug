@@ -6,8 +6,8 @@ import org.springframework.boot.runApplication
 
 @SpringBootApplication
 @EnableConfigurationProperties(AppProperties::class)
-class Demo1Application
+class App
 
 fun main(args: Array<String>) {
-  runApplication<Demo1Application>(*args)
+  runApplication<App>(*args)
 }
